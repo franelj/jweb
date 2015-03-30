@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.7" icons="true">  
+  <object id="1" language="java" name="com.jweb.servlets.AdminAuthorAddController" project="JWeb" 
+    file="/JWeb/src/com/jweb/servlets/AdminAuthorAddController.java" binary="false" label="adminAuthorAddController" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="56" y="0"/>    
+    <execution id="2">      
+      <position height="339" width="0" x="0" y="86"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="276" width="0" x="0" y="128"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="203" width="0" x="0" y="180"/>    
+    </execution>  
+  </object>  
+  <object id="9" language="java" name="com.jweb.models.AuthorHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/AuthorHandler.java" binary="false" label="authorHandler" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="149" width="0" x="0" y="213"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="74" width="0" x="0" y="267"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="com.jweb.dao.AuthorDAO" project="JWeb" 
+    file="/JWeb/src/com/jweb/dao/AuthorDAO.java" binary="false" label="authorDAO" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="299"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="com.jweb.servlets.AdminAuthorEditController" project="JWeb" 
+    file="/JWeb/src/com/jweb/servlets/AdminAuthorEditController.java" binary="false" label="adminAuthorEditController" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="487" y="0"/>    
+    <execution id="16">      
+      <position height="428" width="0" x="0" y="332"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="365" width="0" x="0" y="374"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="com.jweb.models.AuthorHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/AuthorHandler.java" binary="false" label="authorHandler1" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="20">      
+      <position height="311" width="0" x="0" y="407"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="70" width="0" x="0" y="505"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="70" width="0" x="0" y="627"/>    
+    </execution>  
+  </object>  
+  <object id="32" language="java" name="com.jweb.dao.AuthorDAO" project="JWeb" 
+    file="/JWeb/src/com/jweb/dao/AuthorDAO.java" binary="false" label="authorDAO3" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="31">      
+      <position height="21" width="0" x="0" y="655"/>    
+    </execution>  
+  </object>  
+  <object id="33" language="java" name="com.jweb.dao.AuthorDAO" project="JWeb" 
+    file="/JWeb/src/com/jweb/dao/AuthorDAO.java" binary="false" label="authorDAO2" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="533"/>    
+    </execution>  
+  </object>  
+  <object id="34" language="java" name="com.jweb.dao.AuthorDAO" project="JWeb" 
+    file="/JWeb/src/com/jweb/dao/AuthorDAO.java" binary="false" label="authorDAO1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="436"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="addAuthor(javax.servlet.http.HttpServletRequest):com.jweb.beans.Author">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="10" operation="validateFields(javax.servlet.http.HttpServletRequest):com.jweb.beans.Author">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="createAuthor(com.jweb.beans.Author):void">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="17" operation="doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="getAuthors():java.util.List&lt;Author&gt;">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="22" operation="getAuthors():java.util.List&lt;Author&gt;">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="updateAuthor(javax.servlet.http.HttpServletRequest,int):com.jweb.beans.Author">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="deleteAuthor(int):void">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="updateAuthor(com.jweb.beans.Author):void">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="deleteAuthor(int):void">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>
+</sequence-diagram>

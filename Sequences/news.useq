@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.7" icons="true">  
+  <object id="1" language="java" name="com.jweb.servlets.NewsController" project="JWeb" 
+    file="/JWeb/src/com/jweb/servlets/NewsController.java" binary="false" label="newsController" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="50" y="0"/>    
+    <execution id="2">      
+      <position height="192" width="0" x="0" y="92"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="129" width="0" x="0" y="134"/>    
+    </execution>  
+  </object>  
+  <object id="7" language="java" name="com.jweb.models.NewsHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/NewsHandler.java" binary="false" label="newsHandler" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="74" width="0" x="0" y="168"/>    
+    </execution>  
+  </object>  
+  <object id="10" language="java" name="com.jweb.dao.NewsDAO" project="JWeb" file="/JWeb/src/com/jweb/dao/NewsDAO.java" 
+    binary="false" label="newsDAO" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="200"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="getNewsById(int):com.jweb.beans.News">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="8" operation="getNewsById(int):com.jweb.beans.News">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>
+</sequence-diagram>

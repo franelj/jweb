@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.7" icons="true">  
+  <object id="1" language="java" name="com.jweb.servlets.UserAccountController" project="JWeb" 
+    file="/JWeb/src/com/jweb/servlets/UserAccountController.java" binary="false" label="userAccountController" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="29" y="0"/>    
+    <execution id="2">      
+      <position height="586" width="0" x="0" y="87"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="523" width="0" x="0" y="129"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="354" width="0" x="0" y="277"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="com.jweb.models.AddressHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/AddressHandler.java" binary="false" label="addressHandler1" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="14">      
+      <position height="124" width="0" x="0" y="486"/>    
+    </execution>  
+  </object>  
+  <object id="20" language="java" name="com.jweb.dao.AddressDAO" project="JWeb" 
+    file="/JWeb/src/com/jweb/dao/AddressDAO.java" binary="false" label="addressDAO" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="568"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="com.jweb.models.AddressHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/AddressHandler.java" binary="false" label="addressHandler2" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="515"/>    
+    </execution>  
+  </object>  
+  <object id="22" language="java" name="com.jweb.models.UserHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/UserHandler.java" binary="false" label="userHandler1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="12">      
+      <position height="150" width="0" x="0" y="308"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="75" width="0" x="0" y="362"/>    
+    </execution>  
+  </object>  
+  <object id="27" language="java" name="com.jweb.dao.UserDAO" project="JWeb" file="/JWeb/src/com/jweb/dao/UserDAO.java" 
+    binary="false" label="userDAO" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="26">      
+      <position height="21" width="0" x="0" y="395"/>    
+    </execution>  
+  </object>  
+  <object id="28" language="java" name="com.jweb.models.AddressHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/AddressHandler.java" binary="false" label="addressHandler" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="206"/>    
+    </execution>  
+  </object>  
+  <object id="29" language="java" name="com.jweb.models.UserHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/UserHandler.java" binary="false" label="userHandler" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="157"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="getUserById(int):com.jweb.beans.User">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="getAddress(int):com.jweb.beans.Address">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="updateUser(javax.servlet.http.HttpServletRequest):com.jweb.beans.User">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" 
+    operation="updateAddress(com.jweb.beans.Address,javax.servlet.http.HttpServletRequest):com.jweb.beans.Address">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="16" 
+    operation="validateFields(com.jweb.beans.Address,javax.servlet.http.HttpServletRequest):com.jweb.beans.Address">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="updateAddress(com.jweb.beans.Address):void">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="23" 
+    operation="validateFieldsUpdate(com.jweb.beans.User,javax.servlet.http.HttpServletRequest):com.jweb.beans.User">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="updateUser(com.jweb.beans.User):void">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>
+</sequence-diagram>

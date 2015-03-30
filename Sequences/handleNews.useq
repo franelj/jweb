@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.7" icons="true">  
+  <object id="1" language="java" name="com.jweb.servlets.AdminNewsAddController" project="JWeb" 
+    file="/JWeb/src/com/jweb/servlets/AdminNewsAddController.java" binary="false" label="adminNewsAddController" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="74" y="0"/>    
+    <execution id="2">      
+      <position height="333" width="0" x="0" y="92"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="270" width="0" x="0" y="134"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="196" width="0" x="0" y="187"/>    
+    </execution>  
+  </object>  
+  <object id="9" language="java" name="com.jweb.models.NewsHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/NewsHandler.java" binary="false" label="newsHandler" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="144" width="0" x="0" y="218"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="71" width="0" x="0" y="270"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="com.jweb.dao.NewsDAO" project="JWeb" file="/JWeb/src/com/jweb/dao/NewsDAO.java" 
+    binary="false" label="newsDAO" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="299"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="com.jweb.servlets.AdminNewsEditController" project="JWeb" 
+    file="/JWeb/src/com/jweb/servlets/AdminNewsEditController.java" binary="false" label="adminNewsEditController" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="484" y="0"/>    
+    <execution id="16">      
+      <position height="445" width="0" x="0" y="343"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="382" width="0" x="0" y="385"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="com.jweb.models.NewsHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/NewsHandler.java" binary="false" label="newsHandler1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="20">      
+      <position height="331" width="0" x="0" y="415"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="74" width="0" x="0" y="518"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="75" width="0" x="0" y="650"/>    
+    </execution>  
+  </object>  
+  <object id="32" language="java" name="com.jweb.dao.NewsDAO" project="JWeb" file="/JWeb/src/com/jweb/dao/NewsDAO.java" 
+    binary="false" label="newsDAO3" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="31">      
+      <position height="21" width="0" x="0" y="683"/>    
+    </execution>  
+  </object>  
+  <object id="33" language="java" name="com.jweb.dao.NewsDAO" project="JWeb" file="/JWeb/src/com/jweb/dao/NewsDAO.java" 
+    binary="false" label="newsDAO2" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="550"/>    
+    </execution>  
+  </object>  
+  <object id="34" language="java" name="com.jweb.dao.NewsDAO" project="JWeb" file="/JWeb/src/com/jweb/dao/NewsDAO.java" 
+    binary="false" label="newsDAO1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="446"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="addNews(javax.servlet.http.HttpServletRequest):com.jweb.beans.News">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="10" 
+    operation="validateFields(com.jweb.beans.News,javax.servlet.http.HttpServletRequest):com.jweb.beans.News">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="createNews(com.jweb.beans.News):void">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="17" operation="doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="getNews(boolean):java.util.List&lt;News&gt;">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="22" operation="getNews(boolean):java.util.List&lt;News&gt;">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="updateNews(com.jweb.beans.News,javax.servlet.http.HttpServletRequest):com.jweb.beans.News">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="deleteNews(int):void">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="updateNews(com.jweb.beans.News):void">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="deleteNews(int):void">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>
+</sequence-diagram>

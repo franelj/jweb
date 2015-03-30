@@ -1,0 +1,7 @@
+com.jweb.beans
+com.jweb.config
+com.jweb.dao
+com.jweb.exceptions
+com.jweb.filters
+com.jweb.models
+com.jweb.servlets

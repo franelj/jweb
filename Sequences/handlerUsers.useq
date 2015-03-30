@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.7" icons="true">  
+  <object id="1" language="java" name="com.jweb.servlets.AdminUsersHandlerController" project="JWeb" 
+    file="/JWeb/src/com/jweb/servlets/AdminUsersHandlerController.java" binary="false" 
+    label="adminUsersHandlerController" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="36" y="0"/>    
+    <execution id="2">      
+      <position height="424" width="0" x="0" y="85"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="361" width="0" x="0" y="127"/>    
+    </execution>  
+  </object>  
+  <object id="7" language="java" name="com.jweb.models.UserHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/UserHandler.java" binary="false" label="userHandler" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="310" width="0" x="0" y="157"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="69" width="0" x="0" y="253"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="75" width="0" x="0" y="371"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="com.jweb.dao.UserDAO" project="JWeb" file="/JWeb/src/com/jweb/dao/UserDAO.java" 
+    binary="false" label="userDAO2" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="404"/>    
+    </execution>  
+  </object>  
+  <object id="19" language="java" name="com.jweb.dao.UserDAO" project="JWeb" file="/JWeb/src/com/jweb/dao/UserDAO.java" 
+    binary="false" label="userDAO1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="280"/>    
+    </execution>  
+  </object>  
+  <object id="20" language="java" name="com.jweb.dao.UserDAO" project="JWeb" file="/JWeb/src/com/jweb/dao/UserDAO.java" 
+    binary="false" label="userDAO" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="189"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="getUsers():java.util.List&lt;User&gt;">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="8" operation="getUsers():java.util.List&lt;User&gt;">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="getUserById(int):com.jweb.beans.User">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="deleteUser(int):void">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="getUserById(int):com.jweb.beans.User">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="deleteUser(int):void">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>
+</sequence-diagram>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.7" icons="true">  
+  <object id="1" language="java" name="com.jweb.servlets.FrontController" project="JWeb" 
+    file="/JWeb/src/com/jweb/servlets/FrontController.java" binary="false" label="frontController" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="560" width="0" x="0" y="78"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="302" width="0" x="0" y="120"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="229" width="0" x="0" y="172"/>    
+    </execution>  
+  </object>  
+  <object id="13" language="java" name="com.jweb.models.NewsHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/NewsHandler.java" binary="false" label="newsHandler" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="75" width="0" x="0" y="542"/>    
+    </execution>  
+  </object>  
+  <object id="16" language="java" name="com.jweb.dao.NewsDAO" project="JWeb" file="/JWeb/src/com/jweb/dao/NewsDAO.java" 
+    binary="false" label="newsDAO" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="575"/>    
+    </execution>  
+  </object>  
+  <object id="17" language="java" name="com.jweb.models.BookHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/BookHandler.java" binary="false" label="bookHandler" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="70" width="0" x="0" y="451"/>    
+    </execution>  
+  </object>  
+  <object id="20" language="java" name="com.jweb.dao.BookDAO" project="JWeb" file="/JWeb/src/com/jweb/dao/BookDAO.java" 
+    binary="false" label="bookDAO" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="479"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="com.jweb.models.NewsletterHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/NewsletterHandler.java" binary="false" label="newsletterHandler" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="12">      
+      <position height="176" width="0" x="0" y="204"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="102" width="0" x="0" y="257"/>    
+    </execution>  
+  </object>  
+  <object id="28" language="java" name="com.jweb.dao.NewsletterDAO" project="JWeb" 
+    file="/JWeb/src/com/jweb/dao/NewsletterDAO.java" binary="false" label="newsletterDAO1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="317"/>    
+    </execution>  
+  </object>  
+  <object id="29" language="java" name="com.jweb.dao.NewsletterDAO" project="JWeb" 
+    file="/JWeb/src/com/jweb/dao/NewsletterDAO.java" binary="false" label="newsletterDAO" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="286"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="getBooks():java.util.List&lt;Book&gt;">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="getNews(boolean):java.util.List&lt;News&gt;">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="handleSuscriber(javax.servlet.http.HttpServletRequest):com.jweb.beans.Suscriber">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="14" operation="getNews(boolean):java.util.List&lt;News&gt;">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="18" operation="getBooks():java.util.List&lt;Book&gt;">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="22" 
+    operation="validateFields(com.jweb.beans.Suscriber,javax.servlet.http.HttpServletRequest):com.jweb.beans.Suscriber">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="addSuscriber(java.lang.String):void">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="deleteSuscriber(java.lang.String):void">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>
+</sequence-diagram>

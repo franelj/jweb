@@ -1,0 +1,131 @@
+@CHARSET "ISO-8859-1";
+
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300';
+
+/*
+==============================================================================================
+                                           ALL CSS
+==============================================================================================
+*/
+
+body {background-color: #ffffff; font-family: "Roboto Condensed"; font-size: 11pt; font-weight: 300; line-height: 20px; 
+color: #555555; min-height: 100%; margin: 0;}
+p, div {-webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; -o-hyphens: auto; hyphens: auto;}
+p {margin: 10px;}
+
+
+/*
+==============================================================================================
+                                           TITRES
+==============================================================================================
+*/
+
+h1, #subContent h2 {font-size: 18pt; margin: 15px 0 25px;}
+#userMenu h2 {font-size: 13pt; margin: 35px 0 10px;}
+
+
+/*
+==============================================================================================
+                                           CORPS
+==============================================================================================
+*/
+
+aside#userMenu {width: 20%; float: left; margin-right: 2%;}
+
+section#content, section#comments, section#commentForm, section.content {width: 1000px; margin: 20px auto; overflow: auto;}
+section#subContent {width: 77%; float: right; overflow: auto;}
+
+footer {width: 1000px; margin: 10px auto; text-align: center;}
+
+fieldset {border: 1px solid #3D3D3D; border-radius: 10px;}
+fieldset.loginAccount {width: 45%; float: left;}
+fieldset.createAccount {width: 45%; float: right;}
+
+table.form {width: 100%;}
+table.form td, table.form th {padding: 10px; text-align: left;}
+table.form td.submit {text-align: center; padding-top: 20px;}
+
+table.form label {font-weight: 400;}
+table.form input {background: #ffffff; border-radius: 3px; padding: 5px; border: 1px solid #E3E3E3; font-face: "Roboto Condensed"; 
+width: 95%;}
+table.form td.submit input {width: auto; padding: 8px 15px; background: #3D3D3D; color: #ffffff; border: 0; cursor: pointer;}
+
+#subContent table.form th {width: 35%;}
+#subContent table.form {margin-bottom: 25px;}
+
+table.news th, table.commentform th {width: 20% !important; vertical-align: top;}
+table.news textarea, table.commentform textarea {width: 96%; height: 200px;}
+
+table.newsList {width: 100%;}
+table.newsList th {border-bottom: 1px dashed;}
+table.newsList th, table.newsList td {text-align: center; padding: 7px 0;}
+table.newsList th.id {width: 5%;}
+table.newsList th.title {width: 20%;}
+table.newsList th.postdate {width: 20%;}
+table.newsList th.updatedate {width: 20%;}
+table.newsList th.author {width: 15%;}
+table.newsList th.edit {width: 10%;}
+table.newsList th.delete {width: 10%;}
+
+table td input.price {width: 10%;}
+
+div.book {float: left; margin: 0 1% 1% 0; width: 24%; height: 540px; background: #ededed;}
+div.book div.titleContainer {font-weight: 400; text-align: center; height: 85px; overflow: hidden;}
+div.book p.title, div.news p.title {font-weight: 400; font-size: 13pt; text-transform: uppercase; color: #000000;}
+div.book p.serie {font-size: 11pt;}
+div.book p.link {text-align: right;}
+
+div.details {width: 15%; text-align: center; float: left; margin-right: 1%;}
+
+.clear {clear: both;}
+.required, .warning {color: #ff0000;}
+.success {color: #00a400; text-align: justify;}
+
+span.formDetail {font-size: 10pt; font-style: italic;}
+
+img.upImg {height: 200px;}
+img.imgIndex {height: 325px; width: auto;}
+div.imgContainer {width: 95%; height: 325px; overflow: hidden; margin: auto; text-align: center;}
+
+img.floatImg {float: right; height: 300px; margin-left: 2%;}
+div.summary {text-align: justify;}
+
+div.news {width: 73%; float: left; min-height: 280px;}
+div.news, div.newscontent {padding: 1px 5px 5px; background: #ededed;}
+div.news p.title {margin: 5px 10px 20px;}
+div.first {text-align: justify; width: 100%; margin-bottom: 20px;}
+p.metadata {font-style: italic; margin-top: 20px; text-align: right;}
+div.newscontent {text-align: justify;}
+
+div.newsletter {float: right; width: 24%; padding: 5px;}
+.newsletter form {margin-top: 10px;}
+.newsletter fieldset input {margin: 7px 0;}
+.newsletter fieldset input#newsletterEmail {border-radius: 3px; padding: 5px; border: 1px solid #E3E3E3; font-face: "Roboto Condensed"; width: 95%;}
+.newsletter fieldset input#newsletterSubmit {border-radius: 3px; width: auto; padding: 8px 15px; background: #3D3D3D; color: #ffffff; border: 0; cursor: pointer;}
+.newsletter div {margin: 5px 0; text-align: justify;}
+
+
+
+/*
+==============================================================================================
+                                           MENU
+==============================================================================================
+*/
+
+nav#menu {width: 100%; margin: 0; padding: 5px 0; height: 45px; background-color: #242424; 
+background-image: -webkit-linear-gradient(top, #343434, #1b1b1b); background-image: linear-gradient(to bottom, #343434, #1b1b1b);}
+#menu ul {width: 1000px; list-style-type: none; margin: 0 auto; padding: 0;}
+#menu li {float: left; text-align: center; margin: 0; padding: 0; text-transform: uppercase;}
+#menu a {color: #ffffff; display: block; height: 35px; padding: 13px 15px 0; text-decoration: none;}
+#menu img {margin: 3px 20px 0 0;}
+
+#userMenu ul {list-style-type: none; padding: 10px 0 0; margin: 0;}
+
+
+/*
+==============================================================================================
+                                           LIENS
+==============================================================================================
+*/
+
+a {text-decoration: none; color: #000000;}

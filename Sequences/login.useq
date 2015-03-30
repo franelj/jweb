@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.7" icons="true">  
+  <object id="1" language="java" name="com.jweb.servlets.LoginController" project="JWeb" 
+    file="/JWeb/src/com/jweb/servlets/LoginController.java" binary="false" label="loginController" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="337" width="0" x="0" y="78"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="274" width="0" x="0" y="120"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="200" width="0" x="0" y="173"/>    
+    </execution>  
+  </object>  
+  <object id="9" language="java" name="com.jweb.models.UserHandler" project="JWeb" 
+    file="/JWeb/src/com/jweb/models/UserHandler.java" binary="false" label="userHandler" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="149" width="0" x="0" y="203"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="73" width="0" x="0" y="258"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="com.jweb.dao.UserDAO" project="JWeb" file="/JWeb/src/com/jweb/dao/UserDAO.java" 
+    binary="false" label="userDAO" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="289"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="authenticateUser(javax.servlet.http.HttpServletRequest):com.jweb.beans.User">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="10" 
+    operation="validateFieldsConnexion(com.jweb.beans.User,javax.servlet.http.HttpServletRequest):com.jweb.beans.User">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="createUser(com.jweb.beans.User):void">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>
+</sequence-diagram>
